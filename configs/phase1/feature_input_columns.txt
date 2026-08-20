@@ -1,0 +1,17 @@
+observation_id
+dataset_revision
+media_relpath
+media_type
+media_sha256
+start_frame
+end_frame
+sampled_frame_indices
+fps
+box_annotation_relpath
+mask_annotation_relpath
+mask_available
+coordinate_space
+motion_backend_id
+motion_feature_schema_version
+motion_quality_pass
+

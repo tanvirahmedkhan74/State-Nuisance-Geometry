@@ -1,0 +1,61 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+env.bak/
+ENV/
+*.env
+*.env.*
+!.env.example
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter and local tooling
+.ipynb_checkpoints/
+.pyright/
+
+# Project-generated outputs
+/artifacts/*
+!/artifacts/.gitkeep
+
+# Downloaded datasets and model checkpoints
+/datasets/phase1/EgoInteract/*
+!/datasets/phase1/EgoInteract/.gitkeep
+/checkpoints/*
+!/checkpoints/.gitkeep
+
+# Common large media and archive files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z

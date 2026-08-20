@@ -1,0 +1,14 @@
+schema_version: 1
+time_unit: seconds
+backend: reviewed_stationary_region_kinematics
+require_same_backend_within_triplet: true
+drop_train_constant_dimensions: true
+scale_denominator: max_iqr_native_floor
+signed_caliper_grid: [0.25, 0.5, 1.0, 1.5]
+severity_caliper_grid: [0.25, 0.5, 1.0, 1.5]
+minimum_validation_coverage: 0.5
+permutation:
+  replicates: 999
+  group: dependency_group_id
+  action: swap_all_paired_roles_in_group
+

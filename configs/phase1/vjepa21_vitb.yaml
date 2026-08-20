@@ -1,0 +1,29 @@
+model:
+  family: vjepa2_1
+  architecture: vit_base
+  patch_size: 16
+  tubelet_size: 2
+  frames: 16
+  resolution: 384
+  embedding_dimension: 768
+  source_root: vjepa2
+  source_commit: 204698b45b3712590f06245fbfba32d3be539812
+  checkpoint_path: checkpoints/vjepa2_1_vitb_dist_vitG_384.pt
+  checkpoint_sha256: "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d"
+  checkpoint_key: ema_encoder
+  strict_load: true
+preprocess:
+  resize_short_side: 438
+  resize_interpolation: bilinear
+  antialias: false
+  center_crop: 384
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+runtime:
+  batch_size: 1
+  workers: 0
+  forward_precision: bf16
+  pooled_precision: fp32
+  inference_mode: true
+data:
+  media_root: datasets/phase1/EgoInteract

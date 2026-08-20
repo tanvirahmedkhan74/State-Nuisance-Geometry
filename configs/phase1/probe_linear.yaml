@@ -1,0 +1,7 @@
+probe: multinomial_logistic_regression
+fit_split: train
+select_split: validation
+weighting: ipf_class_and_dependency_group
+metric_aggregation: dependency_group_id
+precision: fp32
+

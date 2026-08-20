@@ -1,0 +1,10 @@
+probe: mlp
+input_dimension: 768
+hidden_dimension: 256
+dropout: 0.1
+activation: gelu
+fit_split: train
+select_split: validation
+sampler: dependency_group_then_observation
+precision: fp32
+
